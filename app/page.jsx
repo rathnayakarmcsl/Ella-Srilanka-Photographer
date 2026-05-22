@@ -1,10 +1,10 @@
 export default function Home() {
   return (
-    <div
+    <main
       style={{
-        background: "#000",
+        backgroundColor: "#000",
         color: "#fff",
-        fontFamily: "serif",
+        fontFamily: "Arial, sans-serif",
       }}
     >
       {/* HERO SECTION */}
@@ -12,20 +12,22 @@ export default function Home() {
         style={{
           height: "100vh",
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1974&auto=format&fit=crop')",
+            "url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
-          justifyContent: "center",
           alignItems: "center",
+          justifyContent: "center",
           textAlign: "center",
+          padding: "20px",
         }}
       >
         <div
           style={{
-            background: "rgba(0,0,0,0.5)",
+            background: "rgba(0,0,0,0.6)",
             padding: "40px",
             borderRadius: "20px",
+            maxWidth: "800px",
           }}
         >
           <h1
@@ -39,8 +41,9 @@ export default function Home() {
 
           <p
             style={{
-              fontSize: "22px",
-              maxWidth: "700px",
+              fontSize: "24px",
+              lineHeight: "1.6",
+              color: "#ddd",
             }}
           >
             Luxury proposal, couple and destination photography in Ella,
@@ -53,11 +56,12 @@ export default function Home() {
               display: "inline-block",
               marginTop: "30px",
               padding: "15px 35px",
-              background: "white",
-              color: "black",
+              background: "#fff",
+              color: "#000",
               textDecoration: "none",
               borderRadius: "10px",
               fontWeight: "bold",
+              fontSize: "18px",
             }}
           >
             Book Your Shoot
@@ -85,13 +89,13 @@ export default function Home() {
           style={{
             maxWidth: "800px",
             margin: "auto",
-            fontSize: "20px",
+            fontSize: "22px",
             lineHeight: "1.8",
             color: "#ccc",
           }}
         >
-          I capture emotional and cinematic moments for couples visiting Ella
-          and beautiful destinations around Sri Lanka.
+          I capture emotional and cinematic memories for couples travelling to
+          Ella and beautiful destinations around Sri Lanka.
         </p>
       </section>
 
@@ -119,18 +123,27 @@ export default function Home() {
           }}
         >
           <img
-            src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop"
-            style={{ width: "100%", borderRadius: "20px" }}
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop"
+            style={{
+              width: "100%",
+              borderRadius: "20px",
+            }}
           />
 
           <img
             src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop"
-            style={{ width: "100%", borderRadius: "20px" }}
+            style={{
+              width: "100%",
+              borderRadius: "20px",
+            }}
           />
 
           <img
-            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop"
-            style={{ width: "100%", borderRadius: "20px" }}
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200&auto=format&fit=crop"
+            style={{
+              width: "100%",
+              borderRadius: "20px",
+            }}
           />
         </div>
       </section>
@@ -192,8 +205,8 @@ export default function Home() {
               width: "300px",
             }}
           >
-            <h3>Destination Photography</h3>
-            <p>Travel and destination shoots around Sri Lanka.</p>
+            <h3>Destination Shoots</h3>
+            <p>Professional destination photography around Sri Lanka.</p>
           </div>
         </div>
       </section>
@@ -216,7 +229,7 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "20px",
+            fontSize: "22px",
             color: "#ccc",
           }}
         >
@@ -225,13 +238,13 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "20px",
+            fontSize: "22px",
             color: "#ccc",
           }}
         >
           Instagram: @ellasrilankaphotographer
         </p>
       </section>
-    </div>
+    </main>
   );
 }
